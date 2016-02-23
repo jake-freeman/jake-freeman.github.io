@@ -4,8 +4,9 @@ $(".nav a").on("click", function(){
    $(this).parent().addClass("active");
 });
 
+// sets proper offset for navbar
 $('#nav').affix({
     offset: {
-        top: $('#nav').offset().top
+        top: $('#topnav').offset().top
     }
 });
