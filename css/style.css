@@ -1,0 +1,62 @@
+/* title styles */
+.title {
+  text-align: center;
+}
+
+/* background colors */
+body, .background-grey {
+  background-color: #fbf9ff;
+}
+.background-purple {
+  background-color: #e0dbe4;
+}
+
+/* link styles */
+a {
+  color: black;
+}
+a:hover {
+  color: grey;
+  text-decoration: none;
+}
+
+/* font */
+h1, h2, h3, h4, h5, h6, strong, b, p, address {
+    font-family: 'Open Sans', sans-serif !important;
+}
+p, address {
+  font-size: 15px;
+}
+h1 {
+  font-size: 48px;
+}
+
+/* body / container */
+.container {
+  max-width: 1280px;
+}
+body {
+  padding-top: 45px;
+}
+
+/* navbar */
+nav {
+  opacity: .9;
+  z-index: 99;
+}
+.anchor {
+  display: block;
+  position: relative;
+  top: -50px;
+  visibility: hidden;
+}
+nav.affix {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+}
+
+/* misc */
+.tall-test {
+  height: 2000px;
+}
