@@ -21,7 +21,7 @@ a:hover {
 }
 
 /* font */
-h1, h2, h3, h4, h5, h6, strong, b, p, address {
+h1, h2, h3, h4, h5, h6, strong, b, p, address, li, small {
     font-family: 'Open Sans', sans-serif !important;
 }
 p, address {
@@ -29,6 +29,21 @@ p, address {
 }
 h1 {
   font-size: 48px;
+}
+/* unordered lists */
+ul {
+  margin: 0;
+  padding-left: 10pt;
+}
+ul.dashed {
+  list-style-type: none;
+}
+ul.dashed > li {
+  text-indent: -5px;
+}
+ul.dashed > li:before {
+  content: "-";
+  text-indent: -5px;
 }
 
 /* body / container */
