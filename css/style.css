@@ -5,10 +5,10 @@
 
 /* background colors */
 body, .background-grey {
-  background-color: #fbf9ff;
+  background-color: #FBF9FF;
 }
 .background-purple {
-  background-color: #e0dbe4;
+  background-color: #E0DBE4;
 }
 
 /* link styles */
@@ -21,7 +21,7 @@ a:hover {
 }
 
 /* font */
-h1, h2, h3, h4, h5, h6, strong, b, p, address, li, small {
+body {
     font-family: 'Open Sans', sans-serif !important;
 }
 p, address {
@@ -45,10 +45,22 @@ ul.dashed > li:before {
   content: "-";
   text-indent: -5px;
 }
+ul.no-bullets {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+ul.no-bullets > li {
+  padding-top: 10px;
+}
+ul.no-bullets > li:hover{
+    background:#E0DBE4;
+}
 
 /* body / container */
 .container {
   max-width: 1280px;
+  padding: 10px 50px 50px;
 }
 body {
   padding-top: 45px;
@@ -70,8 +82,12 @@ nav.affix {
   top: 0px;
   width: 100%;
 }
+.navbar {
+  padding: 0px;
+  margin-bottom: 0px;
+}
 
 /* misc */
-.tall-test {
-  height: 2000px;
+.footer {
+  height: 100px;
 }
