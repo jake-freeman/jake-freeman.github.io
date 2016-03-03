@@ -51,16 +51,34 @@ ul.no-bullets {
   padding: 0px;
 }
 ul.no-bullets > li {
-  padding-top: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 ul.no-bullets > li:hover{
     background:#E0DBE4;
 }
 
+/* circles */
+.score {
+  float: right;
+  padding-top: 2px;
+  padding-right: 5px;
+}
+.full-circle {
+  text-align: right;
+  display: inline-block;
+  background-color: #AEA8B2;
+  border: 2px solid #AEA8B2;
+  height: 16px;
+  width: 16px;
+  -moz-border-radius:8px;
+  -webkit-border-radius: 8px;
+}
+
 /* body / container */
 .container {
   max-width: 1280px;
-  padding: 10px 50px 50px;
+  padding: 10px 150px 50px;
 }
 body {
   padding-top: 45px;
@@ -83,7 +101,7 @@ nav.affix {
   width: 100%;
 }
 .navbar {
-  padding: 0px;
+  padding: 0px 75px 0px;
   margin-bottom: 0px;
 }
 
