@@ -55,24 +55,29 @@ ul.no-bullets > li {
   padding-bottom: 5px;
 }
 ul.no-bullets > li:hover{
-    background:#E0DBE4;
+    background:#F2EFF7;
+    /*-ms-transform: scale(1.01,1.01);*/ /* IE 9 */
+    /*-webkit-transform: scale(1.01,1.01);*/ /* Safari */
+    /*transform: scale(1.01,1.01);*/
 }
 
 /* circles */
 .score {
   float: right;
-  padding-top: 2px;
+  padding-top: 1px;
   padding-right: 5px;
 }
 .full-circle {
   text-align: right;
   display: inline-block;
+  background-color: #E0DBE4;
+  height: 12px;
+  width: 12px;
+  -moz-border-radius:6px;
+  -webkit-border-radius: 6px;
+}
+.full {
   background-color: #AEA8B2;
-  border: 2px solid #AEA8B2;
-  height: 16px;
-  width: 16px;
-  -moz-border-radius:8px;
-  -webkit-border-radius: 8px;
 }
 
 /* body / container */
