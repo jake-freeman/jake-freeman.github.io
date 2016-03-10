@@ -13,17 +13,14 @@ $('#nav').affix({
 
 // fill circle spans
 var spans = $(".score");
-var span;
+var span, innerHTML;
 spans.each(function(i, obj) {
   span = $(this);
-  console.log("f");
-
-  var innerHTML = "";
+  innerHTML = "";
   for (var j = 0; j < 5; j++) {
     innerHTML += "\n<span class=\"full-circle";
-    if (j < parseInt(span.data("value"))) {
+    if (j < parseInt(span.data("value")))
       innerHTML += " full";
-    }
     innerHTML += "\"></span>"
   }
   span.append(innerHTML);
