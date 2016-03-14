@@ -5,10 +5,12 @@
 
 /* background colors */
 body, .background-grey {
-  background-color: #FBF9FF;
+  background-color: #FCFFF5;
+  /*color: #111111;*/
 }
 .background-purple {
-  background-color: #E0DBE4;
+  background-color: #D1DBBD;
+  /*color: #EEEEEE;*/
 }
 
 /* link styles */
@@ -23,9 +25,13 @@ a:hover {
 /* font */
 body {
     font-family: 'Open Sans', sans-serif !important;
+    color: #111111;
 }
 p, address {
   font-size: 15px;
+}
+h1,h2,h3 {
+  color: #3E606F;
 }
 h1 {
   font-size: 48px;
@@ -113,6 +119,9 @@ nav {
   opacity: .9;
   z-index: 99;
 }
+ul.nav {
+  padding-bottom: 0px;
+}
 .anchor {
   display: block;
   position: relative;
@@ -125,14 +134,17 @@ nav.affix {
   width: 100%;
 }
 .navbar {
-  padding: 0px 75px 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
   margin-bottom: 0px;
-}
-.container>.navbar-header {
-  /* fix this */
 }
 
 /* misc */
 .footer {
   height: 100px;
+}
+#me {
+  padding: 30px 30px 30px;
+  max-width: 310px;
+  max-height: 310px;
 }
