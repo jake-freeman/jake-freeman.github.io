@@ -1,13 +1,19 @@
-// Set clicked navbar items to active
-$(".nav a").on("click", function(){
-   $(".nav").find(".active").removeClass("active");
-   $(this).parent().addClass("active");
-});
-
 // sets proper offset for navbar
 $('#nav').affix({
     offset: {
         top: $('#topnav').offset().top
+    }
+});
+
+// animate scroll to anchors
+$('a[href^="#"]').on('click', function(event) {
+    var target = $( $(this).attr('href') );
+
+    if( target.length ) {
+        event.preventDefault();
+        $('html, body').animate({
+            scrollTop: target.offset().top
+        }, 350);
     }
 });
 
