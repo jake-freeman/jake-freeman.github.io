@@ -15,7 +15,12 @@ body, .background-light {
 
 /* link styles */
 a {
-  color: black;
+  color: #111111;
+  text-decoration: none;
+}
+a:visited {
+  color: #111111;
+  text-decoration: none;
 }
 a:hover {
   color: grey;
@@ -45,7 +50,7 @@ strong {
 
 /* unordered lists */
 ul {
-  margin: 0;
+  margin: 5px;
   padding-left: 10px;
   padding-bottom: 10px;
 }
@@ -53,10 +58,10 @@ ul.dashed {
   list-style-type: none;
 }
 ul.dashed > li {
-  text-indent: -5px;
+  text-indent: -9px;
 }
 ul.dashed > li:before {
-  content: "-";
+  content: "- ";
   text-indent: -5px;
 }
 ul.no-bullets {
@@ -172,8 +177,14 @@ nav.affix {
 }
 
 /* misc */
-.footer {
-  height: 100px;
+#footer {
+  max-height: 0px;
+  position: relative;
+}
+#footer > small {
+  position: absolute;
+  bottom: 20px;
+  /*left: 0;*/
 }
 #me { /* my picture */
   padding: 30px 30px 30px;
@@ -183,6 +194,6 @@ nav.affix {
 hr {
   border-color: #3E606F;
   opacity: .25;
-  margin-left: 25px;
-  margin-right: 25px;
+  margin-left: 50px;
+  margin-right: 50px;
 }

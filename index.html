@@ -35,6 +35,7 @@
           <li><a href="#education">Education</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
         </ul>
       </div>
     </div> <!-- /.container-fluid -->
@@ -59,16 +60,16 @@
           <p>
             I am a dedicated 3rd year computer science student at the Illinois Institute
             of Technology with a love for software and experience in software development
-            and design.
+            and graphic design.
           </p>
         </div>
         <!-- picture -->
-        <div class="col-md-4 col-sm-4" id="me">
+        <div id="me" class="col-md-4">
           <!-- temporary placeholder -->
           <img src="./images/me.jpg" class="img-circle img-responsive" alt="Photo of Jacob Freeman">
         </div>
         <!-- contact -->
-        <div class="col-md-4 col-sm-4">
+        <div class="col-md-4">
           <h2>Contact info</h2>
           <address>
             <strong>Name:</strong><br>
@@ -77,9 +78,9 @@
             <a href="mailto:jfreeman@hawk.iit.edu">
                     jfreeman@hawk.iit.edu</a><br>
             <strong>Social:</strong><br>
-            <a href="https://www.linkedin.com/in/jacob-freeman-42537584">
+            <a href="https://www.linkedin.com/in/jacob-freeman-42537584" target="_blank">
                     LinkedIn</a> |
-            <a href="https://github.com/jake-freeman">
+            <a href="https://github.com/jake-freeman" target="_blank">
                     GitHub</a><br>
           </address>
         </div>
@@ -204,47 +205,119 @@
         <h1>Experience</h1>
         <hr>
       </div>
-      <div class="row">
-        <div class="col-md-6">
-          <!-- CS TA -->
-          <h4><strong>Computer Science Teaching Assistant</strong><br>
-              Illinois Institute of Technology [Fall 2015 - Present]</h4>
-          <ul class="dashed">
-            <li>Assisted with a computer architecture and assembly language programming course</li>
-            <li>Duties include: grading lab assignments, holding office hours to assist students, and running a lab section</li>
-          </ul>
-          <!-- Vorne intern -->
-          <h4><strong>Software Engineering Intern</strong><br>
-              Vorne Inc. [May 2015 - August 2015]</h4>
-          <ul class="dashed">
-            <li>Operated as member of the software development team</li>
-            <li>Worked on creating features and fixing bugs for a large software project in a Unix/Linux environment</li>
-            <li>Created and documented an automated UI testing system that displayed how a new build changed UI components</li>
-          </ul>
-        </div>
-        <div class="col-md-6">
-          <!-- Base 2 IT -->
-          <h4><strong>General Infomation Technologies</strong><br>
-              Base 2 Mktg. and Supply [June 2012 - August 2013]</h4>
-          <ul class="dashed">
-            <li>Performed general computer assistance and maintenance for all employees</li>
-            <li>Designed and created new company website from the ground up as well as design for paper / electronic mailings</li>
-          </ul>
-          <!-- Freelance web design -->
-          <h4><strong>Website Creation / Design</strong><br>
-              Various Companies [February 2012 - August 2014]</h4>
-          <ul class="dashed">
-            <li>Worked with various clients to create new websites for their small businesses to fit their specific needs</li>
-          </ul>
-        </div>
-      </div> <!-- /.row -->
+      <div class="col-md-6">
+        <!-- CS TA -->
+        <h4><strong>Computer Science Teaching Assistant</strong><br>
+            Illinois Institute of Technology [Fall 2015 - Present]</h4>
+        <ul class="dashed">
+          <li>Assisted with a computer architecture and assembly language programming course</li>
+          <li>Duties include: grading lab assignments, holding office hours to assist students, and running a lab section</li>
+        </ul>
+        <!-- Vorne intern -->
+        <h4><strong>Software Engineering Intern</strong><br>
+            Vorne Inc. [May 2015 - August 2015]</h4>
+        <ul class="dashed">
+          <li>Operated as member of the software development team</li>
+          <li>Worked on creating features and fixing bugs for a large software project in a Unix/Linux environment</li>
+          <li>Created and documented an automated UI testing system that displayed how a new build changed UI components</li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <!-- Base 2 IT -->
+        <h4><strong>General Infomation Technologies</strong><br>
+            Base 2 Mktg. and Supply [June 2012 - August 2013]</h4>
+        <ul class="dashed">
+          <li>Performed general computer assistance and maintenance for all employees</li>
+          <li>Designed and created new company website from the ground up as well as design for paper / electronic mailings</li>
+        </ul>
+        <!-- Freelance web design -->
+        <h4><strong>Website Creation / Design</strong><br>
+            Various Companies [February 2012 - August 2014]</h4>
+        <ul class="dashed">
+          <li>Worked with various clients to create new websites for their small businesses to fit their specific needs</li>
+        </ul>
+      </div>
     </div> <!-- /.container -->
   </div> <!-- /.background-dark -->
 
+  <!-- projects -->
+  <a class="anchor" id="projects"></a>
+  <div class="background-light">
+    <div class="container">
+      <!-- title -->
+      <div class="title">
+        <h1>Notable Projects</h1>
+        <hr>
+      </div>
+      <div class="col-md-6">
+        <!-- UI testing system -->
+        <h4><strong>Automated UI Testing System</strong><br>
+            Vorne Inc. [June 2015 - August 2015]</h4>
+        <ul class="dashed">
+          <li>Developed automated user interface testing system to test UI changes across builds</li>
+          <li>Used Ruby and the Selenium WebDriver to integrate a Cucumber testing suite to allow easy writing of tests to be run automatically on a Jenkins server when a pull request was submitted on GitHub</li>
+        </ul>
+
+        <!-- livestream overlay -->
+        <h4><strong>Livesteam Overlay Tools</strong><br>
+            Personal [2014-2015]</h4>
+        <ul class="dashed">
+          <li>Created two tools to allow real-time editing of text and image overlay elements for live-streaming content</li>
+          <li>Both tools have a full graphical user interface and are open source on GitHub</li>
+          <li><a href="https://github.com/jake-freeman/tech-stream" target="_blank">Text Overlay Editor [GitHub]</a></li>
+          <li><a href="https://github.com/jake-freeman/stream-thing" target="_blank">Image Overlay Editor [GitHub]</a></li>
+        </ul>
+
+        <!-- UI testing system -->
+        <h4><strong>Arduino Programming for HASP Project</strong><br>
+            Illinois Tech [August 2015 - Present]</h4>
+        <ul class="dashed">
+          <li>Worked on the Arduino software which manages the sensors, power management, and communication system for the compact satellite-like system</li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <!-- memory allocator -->
+        <h4><strong>Dynamic Memory Allocator (in C)</strong><br>
+            Illinois Tech [November 2015]</h4>
+        <ul class="dashed">
+          <li>School project to create a fast and memory-efficient general-purpose dynamic memory allocator in C</li>
+          <li>Had to do a lot of research to understand how to build the data structures for heap allocation and management</li>
+        </ul>
+
+        <!-- restaurant review -->
+        <h4><strong>Restaurant Review Database Application</strong><br>
+            Illinois Tech [Spring 2015]</h4>
+        <ul class="dashed">
+          <li>School project which involved creating a PL/SQL database for a restaurant review service</li>
+          <li>Designed a user front-end to construct queries and interact with the database in a user-friendly manner</li>
+        </ul>
+
+        <!-- this site -->
+        <h4><strong>This webpage!</strong><br>
+            Personal [Spring 2016]</h4>
+        <ul class="dashed">
+          <li>Created site from scratch using HTML5 standards along with Twitter Bootstrap</li>
+          <li><a href="https://github.com/jake-freeman/jake-freeman.github.io" target="_blank">Site Repository [GitHub]</a></li>
+        </ul>
+      </div>
+    </div> <!-- /.container -->
+  </div> <!-- /.background-dark -->
+
+
   <!-- footer -->
   <div class="background-light">
-    <div class="container footer">
-
+    <div id="footer" class="container">
+      <small>
+        Jacob Freeman 2016 |
+        <a href="mailto:jfreeman@hawk.iit.edu">
+          Email</a> |
+        <a href="https://www.linkedin.com/in/jacob-freeman-42537584" target="_blank">
+          LinkedIn</a> |
+        <a href="https://github.com/jake-freeman" target="_blank">
+          GitHub</a> |
+        <a href="https://github.com/jake-freeman/jake-freeman.github.io" target="_blank">
+          Page Source</a>
+      </small>
     </div> <!-- /.container .footer -->
   </div> <!-- /.background-light -->
   <!-- include jquery, bootstrap, and custom js -->
