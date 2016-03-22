@@ -177,6 +177,22 @@ nav.affix {
 .navbar-nav>.active>a {
   background-color: #F1F6E7 !important;
 }
+.navbar-nav > li > .spacer {
+  height: 30px;
+  margin: 10px 10px 10px 10px;
+  border-left: 1px solid #193441;
+  opacity: .5;
+  display: inline-block;
+}
+@media(max-width:767px) {
+  .navbar-nav > li > .spacer {
+    border-left: 0px;
+    border-bottom: 1px solid #193441;
+    width: 95%;
+    height: 0px;
+    margin-bottom: 3px;
+  }
+}
 
 /* misc */
 #footer {
