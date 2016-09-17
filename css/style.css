@@ -4,11 +4,13 @@
 }
 
 /* background colors / body */
-body, .background-light {
-  background-color: #FCFFF5;
-  padding-top: 25px;
+body {
+  padding-top: 40px;
   font-family: 'Open Sans', sans-serif !important;
   color: #111111;
+}
+.background-light {
+  background-color: #FCFFF5;
 }
 .background-dark {
   background-color: #D1DBBD;
