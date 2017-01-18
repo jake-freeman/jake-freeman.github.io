@@ -31,3 +31,19 @@ spans.each(function(i, obj) {
   }
   span.append(innerHTML);
 });
+
+// Y axis scroll speed
+var velocity = 0.5;
+
+function update(){
+    var pos = $(window).scrollTop();
+    $('#profile-container').each(function() {
+        var $element = $(this);
+        // subtract some from the height b/c of the padding
+        //var height = $element.height()-18;
+        $(this).css('backgroundPosition', '0% ' + Math.round(pos * velocity - 600) + 'px');
+    });
+};
+
+$(window).bind('scroll', update);
+update();

@@ -200,3 +200,8 @@ nav.affix {
 #tools {
   padding-top: 20px;
 }
+#profile-container {
+  background-image: url("../images/downtown.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
