@@ -203,5 +203,6 @@ nav.affix {
 #profile-container {
   background-image: url("../images/downtown.jpg");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
+  box-shadow: inset 0 0 0 1000px rgba(252, 255, 245, .8);
 }
