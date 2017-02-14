@@ -36,7 +36,7 @@ function fillCircles() {
       innerHTML += "\n<span class=\"full-circle";
       if (j < parseInt(span.data("value")))
         innerHTML += " full";
-      innerHTML += "\"></span>"
+      innerHTML += "\"></span>";
     }
     span.append(innerHTML);
   });
@@ -52,7 +52,7 @@ function setupParalax() {
           var $element = $(this);
           $(this).css('backgroundPosition', '50% ' + Math.round(pos * velocity) + 'px');
       });
-  };
+  }
 
   $(window).bind('scroll', update);
   update();
