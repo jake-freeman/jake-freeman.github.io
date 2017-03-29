@@ -1,3 +1,4 @@
+(function(window) {
 $(document).ready(function() {
   setupNavbar();
   setupParalax();
@@ -48,7 +49,7 @@ function setupParalax() {
 
   function update(){
       var pos = $(window).scrollTop();
-      $('#profile-container').each(function() {
+      $('.profile-container').each(function() {
           var $element = $(this);
           $(this).css('backgroundPosition', '50% ' + Math.round(pos * velocity) + 'px');
       });
@@ -57,3 +58,4 @@ function setupParalax() {
   $(window).bind('scroll', update);
   update();
 }
+})(window);

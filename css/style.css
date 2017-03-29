@@ -1,3 +1,6 @@
+/* CSSLint stuff
+/*csslint box-sizing: false*/
+
 /* title styles */
 .title {
   text-align: center;
@@ -6,13 +9,14 @@
 /* background colors / body */
 body {
   padding-top: 40px;
-  font-family: 'Open Sans', sans-serif !important;
+  font-family: 'Open Sans', sans-serif;
   color: #111111;
 }
-.background-light {
+
+.stripped-bg {
   background-color: #FCFFF5;
 }
-.background-dark {
+.stripped-bg:nth-child(4n+2) {
   background-color: #D1DBBD;
 }
 
@@ -57,15 +61,17 @@ strong {
 }
 
 /* heading */
-h1,h2,h3 {
-  color: #3E606F;
-}
 h1 {
   font-size: 48px;
+  color: #3E606F;
+}
+h2 {
+  color: #3E606F;
 }
 h3 {
   margin-top: 10px;
   margin-bottom: 8px;
+  color: #3E606F;
 }
 h4 {
   margin-bottom: 8px;
@@ -94,8 +100,8 @@ ul.dashed > li:before {
 }
 ul.no-bullets {
   list-style-type: none;
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
 }
 ul.no-bullets > li {
   padding-top: 5px;
@@ -119,9 +125,9 @@ ul.no-bullets > li > .score > .full-circle {
   height: 12px;
   width: 12px;
 
-  border-radius: 6px;
   -moz-border-radius: 6px;
   -webkit-border-radius: 6px;
+  border-radius: 6px;
 
 	-webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
@@ -139,10 +145,12 @@ ul.no-bullets > li:hover > .score > .full-circle {
 nav {
   opacity: .95;
   z-index: 99;
-  background-color: #FCFFF5 !important;
 }
-ul.nav {
-  padding-bottom: 0px;
+.nav {
+  padding-bottom: 0;
+}
+.background-grey {
+  background-color: #FCFFF5;
 }
 .anchor {
   display: block;
@@ -150,57 +158,62 @@ ul.nav {
   top: -50px;
   visibility: hidden;
 }
-nav.affix {
+.affix {
   position: fixed;
-  top: 0px;
+  top: 0;
   width: 100%;
 }
 .navbar {
-  padding-top: 0px;
-  padding-bottom: 0px;
-  margin-bottom: 0px;
-  border-top: 0px;
-  border-left: 0px;
-  border-right: 0px;
-  border-radius: 0px;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-radius: 0;
   position: fixed;
-  top: 0px;
+  top: 0;
   box-sizing: content-box;
 }
 @media(max-width:767px) {
   .navbar {
-    top: 0px;
+    top: 0;
     position: static;
   }
 }
-.navbar-nav>li>a {
-  color: #193441 !important;
+.navbar-custom .navbar-nav > li > a {
+  color: #193441;
 }
-.navbar-nav>li>a:hover {
-  color: #3E606F !important;
+.navbar-custom .navbar-nav > li > a:hover,
+.navbar-custom .navbar-nav > li > a:focus {
+  color: #3E606F;
+  background-color: inherit;
 }
-.navbar-nav>.active>a {
-  background-color: #F1F6E7 !important;
+/* [HACK]: Need to be extra specific to override previous rule */
+.navbar-custom .navbar-nav > .active > a,
+.navbar-custom .navbar-nav > .active > a:focus,
+.navbar-custom .navbar-nav > .active > a:hover {
+  background-color: #F1F6E7;
 }
 
 /* misc */
-#footer {
+.footer {
   position: relative;
-  padding: 20px 0px 20px 0px;
+  padding: 20px 0 20px 0;
 }
-#footer > small {
+.footer > small {
   position: absolute;
   bottom: 20px;
 }
-#me { /* my picture */
+.circle-picture-wrap { /* my picture */
   padding: 30px 30px 30px;
   max-width: 310px;
   max-height: 310px;
 }
-#tools {
+.tools {
   padding-top: 20px;
 }
-#profile-container {
+.profile-container {
   background-image: url("../images/downtown-light.jpg");
   background-repeat: no-repeat;
   background-size: cover;

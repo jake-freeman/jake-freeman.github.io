@@ -43,7 +43,7 @@
 
 <body data-spy="scroll" data-target="#topnav">
   <!-- navbar -->
-  <nav id="topnav" class="navbar navbar-default affix-top background-grey" data-spy="affix">
+  <nav id="topnav" class="navbar navbar-custom affix-top background-grey" data-spy="affix">
     <div class="container navbar">
       <!-- mobile display toggle -->
       <div class="navbar-header">
@@ -69,10 +69,9 @@
     </div> <!-- /.container .navbar -->
   </nav> <!-- /nav -->
 
-
   <!-- basic profile -->
   <a class="anchor" id="profile"></a>
-  <div class="background-light" id="profile-container">
+  <div class="profile-container">
     <div class="container top-container">
       <!-- title -->
       <div class="title">
@@ -92,7 +91,7 @@
       </div>
 
       <!-- picture -->
-      <div id="me" class="col-md-4">
+      <div class="col-md-4 circle-picture-wrap">
         <img src="./images/me.jpg" class="img-circle img-responsive" alt="Photo of Jacob Freeman">
       </div>
       <!-- contact -->
@@ -112,297 +111,299 @@
         </address>
       </div>
     </div> <!-- /.container -->
-  </div> <!-- /.background-light -->
+  </div> <!-- ./stripped-bg -->
 
 
-  <!-- experience-->
-  <a class="anchor" id="experience"></a>
-  <div class="background-dark">
-    <div class="container">
-      <!-- title -->
-      <div class="title">
-        <h1>Experience</h1>
-        <hr>
-      </div>
-      <div class="col-md-6">
-        <!-- CS TA -->
-        <h3>Computer Science Teaching Assistant</h3>
-        <h4>Illinois Institute of Technology [Fall 2015 - Present]</h4>
-        <ul class="dashed">
-          <li>Assisted with a computer architecture and assembly language programming course</li>
-          <li>Duties include: grading lab assignments, holding office hours to assist students, and running a lab section</li>
-        </ul>
-        <!-- Base 2 IT -->
-        <h3>General Infomation Technologies</h3>
-        <h4>Base 2 Mktg. and Supply [June 2012 - August 2013]</h4>
-        <ul class="dashed">
-          <li>Performed general computer assistance and maintenance for all employees</li>
-          <li>Designed and created new company website from the ground up as well as design for paper / electronic mailings</li>
-        </ul>
-      </div>
-      <div class="col-md-6">
-        <!-- Vorne intern -->
-        <h3>Software Engineering Intern</h3>
-        <h4>Vorne Inc. [Summer's of 2015 and 2016]</h4>
-        <ul class="dashed">
-          <li>Operated as member of the software development team</li>
-          <li>Worked on creating features and fixing bugs for a large software project in a Unix/Linux environment</li>
-          <li>Created and documented an automated UI testing system that displayed how a new build changed UI components</li>
-        </ul>
-        <!-- Freelance web design -->
-        <h3>Website Creation / Design</h3>
-        <h4>Various Companies [February 2012 - August 2014]</h4>
-        <ul class="dashed">
-          <li>Worked with various clients to create new websites for their small businesses to fit their specific needs</li>
-        </ul>
-      </div>
-    </div> <!-- /.container -->
-  </div> <!-- /.background-dark -->
-
-
-  <!-- eduction -->
-  <a class="anchor" id="education"></a>
-  <div class="background-light">
-    <div class="container">
-      <!-- title -->
-      <div class="title">
-        <h1>Education</h1>
-        <hr>
-      </div>
-
-      <!-- academics -->
-      <div class="col-md-6">
-        <h2>Academics</h2>
-        <!-- IIT -->
-        <h3>Illinois Institute of Technology</h3>
-        <h4>BS in Computer Science [2013 - <em>May 2017</em>]*</h4>
-        <ul class="dashed">
-          <li>Major GPA of 3.2</li>
-          <li>Dean's List scholar</li>
-          <li>Member of IEEE Eta Kappa Nu International Honors Society</li>
-        </ul>
-        <small>* using anticipated graduation date</small>
-
-        <!-- Cary Grove -->
-        <!--<h3>Cary Grove High School</h3>
-        <h4>Class of 2013</h4>-->
-      </div>
-
-      <!-- relevant courses -->
-      <div class="col-md-6">
-        <h2>Major Courses</h2>
-        <ul class="dashed">
-          <li>Data Structures and Algorithms</li>
-          <li>Computer Organization and Assembly Language Programming</li>
-          <li>Database Organization</li>
-          <li>Systems Programming</li>
-          <li>Software Engineering</li>
-          <li>Computer Security</li>
-          <li>Object Oriented Programming and Design</li>
-          <li>Intro to Algorithms</li>
-          <li>Computer Graphics</li>
-          <li>Programming Languages and Translators</li>
-          <li>Operating Systems</li>
-          <li>Rich Web Applications</li>
-          <li>Software Quality Management</li>
-        </ul>
-      </div>
-    </div> <!-- /.container -->
-  </div> <!-- /.background-light -->
-
-
-  <!-- activities -->
-  <a class="anchor" id="activities"></a>
-  <div class="background-dark">
-    <div class="container">
-      <!-- title -->
-      <div class="title">
-        <h1>Activities</h1>
-        <hr>
-      </div>
-      <div class="col-md-6">
-        <!-- HASP -->
-        <h3>High Altitude Student Platform (HASP)</h3>
-        <h4>Software Team Leader [2015 - Present]</h4>
-        <ul class="dashed">
-          <li>Lead of software team for satellite payload supported by NASA</li>
-          <li>Project’s goal is to run experiments in a very high altitude
-              environment to prepare for a future orbital satellite</li>
-        </ul>
-      </div>
-
+  <div class="stripped-content">
+    <!-- experience-->
+    <a class="anchor" id="experience"></a>
+    <div class="stripped-bg background-dark">
+      <div class="container">
+        <!-- title -->
+        <div class="title">
+          <h1>Experience</h1>
+          <hr>
+        </div>
         <div class="col-md-6">
-        <!-- Smash Bros -->
-        <h3>Smash Brother’s at IIT</h3>
-        <h4>Co-founder / Treasurer [2014 - Present]</h4>
-        <ul class="dashed">
-          <li>Video gaming organization focused on the social aspect of gaming</li>
-          <li>Host weekly general body meetings and organize many events and tournaments ever semester</li>
-          <li>Voted Best New Student Organization in Spring 2015</li>
-        </ul>
-      </div>
-    </div> <!-- /.container -->
-  </div> <!-- /.background-dark -->
-
-
-  <!-- skills and abilities -->
-  <a class="anchor" id="skills"></a>
-  <div class="background-light">
-    <div class="container">
-      <!-- title -->
-      <div class="title">
-        <h1>Skills &amp; Abilities</h1>
-        <hr>
-      </div>
-
-      <!-- programming languages -->
-      <h3>Programming Languages</h3>
-      <div class="row">
+          <!-- CS TA -->
+          <h3>Computer Science Teaching Assistant</h3>
+          <h4>Illinois Institute of Technology [Fall 2015 - Present]</h4>
+          <ul class="dashed">
+            <li>Assisted with a computer architecture and assembly language programming course</li>
+            <li>Duties include: grading lab assignments, holding office hours to assist students, and running a lab section</li>
+          </ul>
+          <!-- Base 2 IT -->
+          <h3>General Infomation Technologies</h3>
+          <h4>Base 2 Mktg. and Supply [June 2012 - August 2013]</h4>
+          <ul class="dashed">
+            <li>Performed general computer assistance and maintenance for all employees</li>
+            <li>Designed and created new company website from the ground up as well as design for paper / electronic mailings</li>
+          </ul>
+        </div>
         <div class="col-md-6">
-          <ul class="no-bullets">
-            <li>C                   <span class="score" data-value="5"></span></li>
-            <li>C++                 <span class="score" data-value="5"></span></li>
-            <li>JavaScript (NodeJS) <span class="score" data-value="4"></span></li>
-            <li>HTML5               <span class="score" data-value="4"></span></li>
-            <li>CSS                 <span class="score" data-value="4"></span></li>
+          <!-- Vorne intern -->
+          <h3>Software Engineering Intern</h3>
+          <h4>Vorne Inc. [Summer's of 2015 and 2016]</h4>
+          <ul class="dashed">
+            <li>Operated as member of the software development team</li>
+            <li>Worked on creating features and fixing bugs for a large software project in a Unix/Linux environment</li>
+            <li>Created and documented an automated UI testing system that displayed how a new build changed UI components</li>
+          </ul>
+          <!-- Freelance web design -->
+          <h3>Website Creation / Design</h3>
+          <h4>Various Companies [February 2012 - August 2014]</h4>
+          <ul class="dashed">
+            <li>Worked with various clients to create new websites for their small businesses to fit their specific needs</li>
+          </ul>
+        </div>
+      </div> <!-- /.container -->
+    </div> <!-- ./stripped-bg -->
+
+
+    <!-- eduction -->
+    <a class="anchor" id="education"></a>
+    <div class="stripped-bg background-light">
+      <div class="container">
+        <!-- title -->
+        <div class="title">
+          <h1>Education</h1>
+          <hr>
+        </div>
+
+        <!-- academics -->
+        <div class="col-md-6">
+          <h2>Academics</h2>
+          <!-- IIT -->
+          <h3>Illinois Institute of Technology</h3>
+          <h4>BS in Computer Science [2013 - <em>May 2017</em>]*</h4>
+          <ul class="dashed">
+            <li>Major GPA of 3.2</li>
+            <li>Dean's List scholar</li>
+            <li>Member of IEEE Eta Kappa Nu International Honors Society</li>
+          </ul>
+          <small>* using anticipated graduation date</small>
+
+          <!-- Cary Grove -->
+          <!--<h3>Cary Grove High School</h3>
+          <h4>Class of 2013</h4>-->
+        </div>
+
+        <!-- relevant courses -->
+        <div class="col-md-6">
+          <h2>Major Courses</h2>
+          <ul class="dashed">
+            <li>Data Structures and Algorithms</li>
+            <li>Computer Organization and Assembly Language Programming</li>
+            <li>Database Organization</li>
+            <li>Systems Programming</li>
+            <li>Software Engineering</li>
+            <li>Computer Security</li>
+            <li>Object Oriented Programming and Design</li>
+            <li>Intro to Algorithms</li>
+            <li>Computer Graphics</li>
+            <li>Programming Languages and Translators</li>
+            <li>Operating Systems</li>
+            <li>Rich Web Applications</li>
+            <li>Software Quality Management</li>
+          </ul>
+        </div>
+      </div> <!-- /.container -->
+    </div> <!-- ./stripped-bg -->
+
+
+    <!-- activities -->
+    <a class="anchor" id="activities"></a>
+    <div class="stripped-bg background-dark">
+      <div class="container">
+        <!-- title -->
+        <div class="title">
+          <h1>Activities</h1>
+          <hr>
+        </div>
+        <div class="col-md-6">
+          <!-- HASP -->
+          <h3>High Altitude Student Platform (HASP)</h3>
+          <h4>Software Team Leader [2015 - Present]</h4>
+          <ul class="dashed">
+            <li>Lead of software team for satellite payload supported by NASA</li>
+            <li>Project’s goal is to run experiments in a very high altitude
+                environment to prepare for a future orbital satellite</li>
           </ul>
         </div>
 
-        <div class="col-md-6">
-          <ul class="no-bullets">
-            <li>Java               <span class="score" data-value="4"></span></li>
-            <li>Ruby (and Rails)   <span class="score" data-value="3"></span></li>
-            <li>Unix Shell Scripts <span class="score" data-value="3"></span></li>
-            <li>Python             <span class="score" data-value="2"></span></li>
-            <li>PL/SQL             <span class="score" data-value="2"></span></li>
+          <div class="col-md-6">
+          <!-- Smash Bros -->
+          <h3>Smash Brother’s at IIT</h3>
+          <h4>Co-founder / Treasurer [2014 - Present]</h4>
+          <ul class="dashed">
+            <li>Video gaming organization focused on the social aspect of gaming</li>
+            <li>Host weekly general body meetings and organize many events and tournaments ever semester</li>
+            <li>Voted Best New Student Organization in Spring 2015</li>
           </ul>
         </div>
-      </div> <!-- /.row -->
-      <!-- tools / software -->
-      <h3 id="tools">Tools / Software</h3>
-      <div class="row">
-        <div class="col-md-6">
-          <ul class="no-bullets">
-            <li>Unix / Linux    <span class="score" data-value="5"></span></li>
-            <li>git             <span class="score" data-value="4"></span></li>
-            <li>Selenium        <span class="score" data-value="4"></span></li>
-            <li>Adobe Photoshop <span class="score" data-value="4"></span></li>
-            <li>GDB             <span class="score" data-value="3"></span></li>
-          </ul>
+      </div> <!-- /.container -->
+    </div> <!-- ./stripped-bg -->
+
+
+    <!-- skills and abilities -->
+    <a class="anchor" id="skills"></a>
+    <div class="stripped-bg background-light">
+      <div class="container">
+        <!-- title -->
+        <div class="title">
+          <h1>Skills &amp; Abilities</h1>
+          <hr>
         </div>
 
+        <!-- programming languages -->
+        <h3>Programming Languages</h3>
+        <div class="row">
+          <div class="col-md-6">
+            <ul class="no-bullets">
+              <li>C                   <span class="score" data-value="5"></span></li>
+              <li>C++                 <span class="score" data-value="5"></span></li>
+              <li>JavaScript (NodeJS) <span class="score" data-value="4"></span></li>
+              <li>HTML5               <span class="score" data-value="4"></span></li>
+              <li>CSS                 <span class="score" data-value="4"></span></li>
+            </ul>
+          </div>
+
+          <div class="col-md-6">
+            <ul class="no-bullets">
+              <li>Java               <span class="score" data-value="4"></span></li>
+              <li>Ruby (and Rails)   <span class="score" data-value="3"></span></li>
+              <li>Unix Shell Scripts <span class="score" data-value="3"></span></li>
+              <li>Python             <span class="score" data-value="2"></span></li>
+              <li>PL/SQL             <span class="score" data-value="2"></span></li>
+            </ul>
+          </div>
+        </div> <!-- /.row -->
+        <!-- tools / software -->
+        <h3 class="tools">Tools / Software</h3>
+        <div class="row">
+          <div class="col-md-6">
+            <ul class="no-bullets">
+              <li>Unix / Linux    <span class="score" data-value="5"></span></li>
+              <li>git             <span class="score" data-value="4"></span></li>
+              <li>Selenium        <span class="score" data-value="4"></span></li>
+              <li>Adobe Photoshop <span class="score" data-value="4"></span></li>
+              <li>GDB             <span class="score" data-value="3"></span></li>
+            </ul>
+          </div>
+
+          <div class="col-md-6">
+            <ul class="no-bullets">
+              <li>Vagrant       <span class="score" data-value="3"></span></li>
+              <li>Make          <span class="score" data-value="3"></span></li>
+              <li>JUnit         <span class="score" data-value="3"></span></li>
+              <li>Netbeans      <span class="score" data-value="2"></span></li>
+              <li>Visual Studio <span class="score" data-value="2"></span></li>
+            </ul>
+          </div>
+        </div> <!-- /.row -->
+      </div> <!-- /.container -->
+    </div> <!-- ./stripped-bg -->
+
+
+    <!-- projects -->
+    <a class="anchor" id="projects"></a>
+    <div class="stripped-bg background-dark">
+      <div class="container">
+        <!-- title -->
+        <div class="title">
+          <h1>Notable Projects</h1>
+          <hr>
+        </div>
         <div class="col-md-6">
-          <ul class="no-bullets">
-            <li>Vagrant       <span class="score" data-value="3"></span></li>
-            <li>Make          <span class="score" data-value="3"></span></li>
-            <li>JUnit         <span class="score" data-value="3"></span></li>
-            <li>Netbeans      <span class="score" data-value="2"></span></li>
-            <li>Visual Studio <span class="score" data-value="2"></span></li>
+          <!-- UI testing system -->
+          <h3>Automated UI Testing System</h3>
+          <h4>Vorne Inc. [June 2015 - August 2015]</h4>
+          <ul class="dashed">
+            <li>Developed automated user interface testing system to test UI changes across builds</li>
+            <li>Used Ruby and the Selenium WebDriver to integrate a Cucumber testing suite to allow easy writing of tests to be run automatically on a Jenkins server when a pull request was submitted on GitHub</li>
+          </ul>
+
+          <!-- Hardware testing system -->
+          <h3>Automated Hardware Testing System</h3>
+          <h4>Vorne Inc. [July 2016 - August 2016]</h4>
+          <ul class="dashed">
+            <li>Developed automated hardware testing system to test system uptime and performance with a real-world load and give the developers daily reports for status monitoring</li>
+            <li>Using C, NodeJS, and a Beaglebone Black microcontroller I wrote software that fired phyiscal inputs to the production device and collected data about performance, memory usage, and uptime</li>
+          </ul>
+
+          <!-- livestream overlay -->
+          <h3>Livesteam Overlay Tools</h3>
+          <h4>Personal [2014-2015]</h4>
+          <ul class="dashed">
+            <li>Created two tools to allow real-time editing of text and image overlay elements for live-streaming content</li>
+            <li>Both tools have a full graphical user interface and are open source on GitHub</li>
+            <li><a href="https://github.com/jake-freeman/tech-stream" target="_blank">Text Overlay Editor [GitHub]</a></li>
+            <li><a href="https://github.com/jake-freeman/stream-thing" target="_blank">Image Overlay Editor [GitHub]</a></li>
+          </ul>
+
+          <!-- this site -->
+          <h3>This webpage!</h3>
+          <h4>Personal [Spring 2016]</h4>
+          <ul class="dashed">
+            <li>Created site from scratch using HTML5 standards along with Twitter Bootstrap</li>
+            <li><a href="https://github.com/jake-freeman/jake-freeman.github.io" target="_blank">Site Repository [GitHub]</a></li>
+          </ul>
+
+        </div>
+        <div class="col-md-6">
+          <!-- arduino for HASP -->
+          <h3>Arduino Programming for HASP Project</h3>
+          <h4>Illinois Tech [August 2015 - August 2016]</h4>
+          <ul class="dashed">
+            <li>Worked on the Arduino software which manages the sensors, power management, and communication system for the compact satellite-like system</li>
+          </ul>
+
+          <!-- memory allocator -->
+          <h3>Dynamic Memory Allocator (in C)</h3>
+          <h4>Illinois Tech [Fall 2015]</h4>
+          <ul class="dashed">
+            <li>School project to create a fast and memory-efficient general-purpose dynamic memory allocator in C</li>
+            <li>Had to do a lot of research to understand how to build the data structures for heap allocation and management</li>
+          </ul>
+
+          <!-- Catering Servive RESTful Service -->
+          <h3>Catering Servive RESTful Service</h3>
+          <h4>Illinois Tech [Spring 2016]</h4>
+          <ul class="dashed">
+            <li>School project to create a RESTful service for a catering business</li>
+            <li>Written in C++ the service would recieve GET, PUT, and POST requests for placing orders, seeing menu items, changing menu items, seeing orders, etc.</li>
+            <li>Was required to work in a Linux environment and used build tools such as make</li>
+          </ul>
+
+          <!-- restaurant review -->
+          <h3>Restaurant Review Database Application</h3>
+          <h4>Illinois Tech [Spring 2015]</h4>
+          <ul class="dashed">
+            <li>School project which involved creating a PL/SQL database for a restaurant review service</li>
+            <li>Designed a user front-end to construct queries and interact with the database in a user-friendly manner</li>
           </ul>
         </div>
-      </div> <!-- /.row -->
-    </div> <!-- /.container -->
-  </div> <!-- /.background-light -->
+      </div> <!-- /.container -->
+    </div> <!-- ./stripped-bg -->
 
-
-  <!-- projects -->
-  <a class="anchor" id="projects"></a>
-  <div class="background-dark">
-    <div class="container">
-      <!-- title -->
-      <div class="title">
-        <h1>Notable Projects</h1>
-        <hr>
-      </div>
-      <div class="col-md-6">
-        <!-- UI testing system -->
-        <h3>Automated UI Testing System</h3>
-        <h4>Vorne Inc. [June 2015 - August 2015]</h4>
-        <ul class="dashed">
-          <li>Developed automated user interface testing system to test UI changes across builds</li>
-          <li>Used Ruby and the Selenium WebDriver to integrate a Cucumber testing suite to allow easy writing of tests to be run automatically on a Jenkins server when a pull request was submitted on GitHub</li>
-        </ul>
-
-        <!-- Hardware testing system -->
-        <h3>Automated Hardware Testing System</h3>
-        <h4>Vorne Inc. [July 2016 - August 2016]</h4>
-        <ul class="dashed">
-          <li>Developed automated hardware testing system to test system uptime and performance with a real-world load and give the developers daily reports for status monitoring</li>
-          <li>Using C, NodeJS, and a Beaglebone Black microcontroller I wrote software that fired phyiscal inputs to the production device and collected data about performance, memory usage, and uptime</li>
-        </ul>
-
-        <!-- livestream overlay -->
-        <h3>Livesteam Overlay Tools</h3>
-        <h4>Personal [2014-2015]</h4>
-        <ul class="dashed">
-          <li>Created two tools to allow real-time editing of text and image overlay elements for live-streaming content</li>
-          <li>Both tools have a full graphical user interface and are open source on GitHub</li>
-          <li><a href="https://github.com/jake-freeman/tech-stream" target="_blank">Text Overlay Editor [GitHub]</a></li>
-          <li><a href="https://github.com/jake-freeman/stream-thing" target="_blank">Image Overlay Editor [GitHub]</a></li>
-        </ul>
-
-        <!-- this site -->
-        <h3>This webpage!</h3>
-        <h4>Personal [Spring 2016]</h4>
-        <ul class="dashed">
-          <li>Created site from scratch using HTML5 standards along with Twitter Bootstrap</li>
-          <li><a href="https://github.com/jake-freeman/jake-freeman.github.io" target="_blank">Site Repository [GitHub]</a></li>
-        </ul>
-
-      </div>
-      <div class="col-md-6">
-        <!-- arduino for HASP -->
-        <h3>Arduino Programming for HASP Project</h3>
-        <h4>Illinois Tech [August 2015 - August 2016]</h4>
-        <ul class="dashed">
-          <li>Worked on the Arduino software which manages the sensors, power management, and communication system for the compact satellite-like system</li>
-        </ul>
-
-        <!-- memory allocator -->
-        <h3>Dynamic Memory Allocator (in C)</h3>
-        <h4>Illinois Tech [Fall 2015]</h4>
-        <ul class="dashed">
-          <li>School project to create a fast and memory-efficient general-purpose dynamic memory allocator in C</li>
-          <li>Had to do a lot of research to understand how to build the data structures for heap allocation and management</li>
-        </ul>
-
-        <!-- Catering Servive RESTful Service -->
-        <h3>Catering Servive RESTful Service</h3>
-        <h4>Illinois Tech [Spring 2016]</h4>
-        <ul class="dashed">
-          <li>School project to create a RESTful service for a catering business</li>
-          <li>Written in C++ the service would recieve GET, PUT, and POST requests for placing orders, seeing menu items, changing menu items, seeing orders, etc.</li>
-          <li>Was required to work in a Linux environment and used build tools such as make</li>
-        </ul>
-
-        <!-- restaurant review -->
-        <h3>Restaurant Review Database Application</h3>
-        <h4>Illinois Tech [Spring 2015]</h4>
-        <ul class="dashed">
-          <li>School project which involved creating a PL/SQL database for a restaurant review service</li>
-          <li>Designed a user front-end to construct queries and interact with the database in a user-friendly manner</li>
-        </ul>
-      </div>
-    </div> <!-- /.container -->
-  </div> <!-- /.background-dark -->
-
-  <!-- footer -->
-  <div class="background-light">
-    <div id="footer" class="container">
-      <div class="col-md-12">
-        <small>
-          Jacob Freeman 2016 |
-          <a href="mailto:jfreeman@hawk.iit.edu">
-            Email</a> |
-          <a href="https://www.linkedin.com/in/jakefreemancs" target="_blank">
-            LinkedIn</a> |
-          <a href="https://github.com/jake-freeman" target="_blank">
-            GitHub</a> |
-          <a href="https://github.com/jake-freeman/jake-freeman.github.io" target="_blank">
-            Page Source</a>
-        </small>
-      </div> <!-- /.col -->
-    </div> <!-- /.container -->
-  </div> <!-- /.background-light -->
+    <!-- footer -->
+    <div class="stripped-bg background-light">
+      <div class="container footer">
+        <div class="col-md-12">
+          <small>
+            Jacob Freeman 2016 |
+            <a href="mailto:jfreeman@hawk.iit.edu">
+              Email</a> |
+            <a href="https://www.linkedin.com/in/jakefreemancs" target="_blank">
+              LinkedIn</a> |
+            <a href="https://github.com/jake-freeman" target="_blank">
+              GitHub</a> |
+            <a href="https://github.com/jake-freeman/jake-freeman.github.io" target="_blank">
+              Page Source</a>
+          </small>
+        </div> <!-- /.col -->
+      </div> <!-- /.container -->
+    </div> <!-- ./stripped-bg -->
+  </div>
 </body>
 </html>
